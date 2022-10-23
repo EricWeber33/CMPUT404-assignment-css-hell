@@ -1,0 +1,142 @@
+html {
+    background: repeating-linear-gradient(pink, pink 20px, magenta 20px,magenta 40px);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100%;
+}
+
+body {
+    display: inline-flex;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+li {
+    list-style: square;
+}
+
+
+.main {
+    width: 75%;
+}
+
+.main .profile {
+    display: inline-flex;
+    width: 67%;
+    height: 10%;
+    padding: 1rem;
+    position: relative;
+}
+
+.main .profile .photo {
+    width: 220px;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    border: ridge white 15px;
+}
+
+.main .profile .info{
+    padding-left: 1rem;
+    display: block;
+}
+
+.main .about {
+    display: inline-flex;
+    width: 100%;
+}
+
+.main .about .section {
+    flex: 1;
+    display: block;
+    margin: 1em;
+    padding-bottom: 1em;
+    background: rgb(230,230,230);
+    border: ridge white 15px;
+    border-radius: 50%;
+}
+
+.main .about .section hr {
+    background: rgb(0, 0, 0);
+    height: 3px;
+    border: dashed;
+}
+
+.main .about .section h3,p {
+    padding-inline: 1rem;
+    padding-right: 1rem;
+}
+
+.separator {
+    position: relative;
+    height: 30px;
+    left: 1rem;
+}
+
+.separator .top {
+    height: 15px;
+    width: 95%;
+    position: relative;
+    background: repeating-linear-gradient(90deg, yellow, orange);
+}
+
+.separator .bottom_left{
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 50%;
+    position: relative;
+    background: repeating-radial-gradient(yellow, orange)
+}
+
+.separator .bottom_right{
+    top: 15px;
+    left: 50%;
+    height: 15px;
+    width: 45%;
+    position: absolute;
+    background: repeating-radial-gradient(orange, yellow);
+}
+
+.sidebar {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgb(230, 230, 230);
+    width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sidebar .section {
+    margin: 1em;
+}
+
+.sidebar hr {
+    border: dashed;
+    color: black;
+    height:3px;
+}
+
+.section .social {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    margin: 1em;
+}
+
+.sidebar .section .social .icon {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 50%;
+}
+
+.sidebar .section .social a {
+    flex: 1;
+    position:absolute;
+    left: 48px;
+    padding-right: 1em;
+}

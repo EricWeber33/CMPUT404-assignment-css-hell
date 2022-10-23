@@ -1,0 +1,153 @@
+html {
+    background: rgb(15, 15, 15);
+    color: white;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+body {
+    display: inline-flex;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+li {
+    list-style: square;
+}
+
+.main {
+    width: 75%;
+}
+
+.main .profile {
+    display: inline-flex;
+    width: 67%;
+    height: 10%;
+    padding: 1rem;
+    position: relative;
+}
+
+.main .profile .photo {
+    width: 220px;
+    height: 300px;
+    float: left;
+    border: solid yellow 2px;
+}
+
+.main .profile .info{
+    padding-left: 1rem;
+    display: block;
+}
+
+.main .about {
+    display: inline-flex;
+    width: 100%;
+}
+
+.main .about .section {
+    flex: 1;
+    display: block;
+    margin: 1em;
+    padding-bottom: 1em;
+    background: rgb(25,25,25);
+    border: lime 2px;
+    border-style: none none solid solid;
+    border-radius: 0 15px;
+}
+
+.main .about .section hr {
+    background: lime;
+    height: 2px;
+    border: none;
+}
+
+.main .about .section h3,p {
+    padding-inline: 1rem;
+    padding-right: 1rem;
+}
+
+.separator {
+    position: relative;
+    height: 30px;
+    left: 1rem;
+}
+
+.separator .top {
+    transform:skewX(-45deg);
+    left: 30%;
+    height: 15px;
+    width: 67%;
+    position: relative;
+    background-color: yellow;
+}
+
+.separator .bottom_left{
+    transform: skewX(45deg);
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 45%;
+    position: relative;
+    background-color: lime;
+}
+
+.separator .bottom_right{
+    transform: skewX(-45deg);
+    top: 15px;
+    left: 5%;
+    height: 15px;
+    width: 45%;
+    position: absolute;
+    background-color: lime;
+}
+
+.sidebar {
+    margin-top: 0;
+    margin-bottom: 0;
+    background: rgb(25, 25, 25);
+    width: 25%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sidebar .section {
+    margin: 1em;
+}
+
+.sidebar hr:nth-of-type(odd) {
+    background: yellow;
+    border: none;
+    height: 2px;
+}
+
+.sidebar hr:nth-of-type(even) {
+    background: lime;
+    border: none;
+    height: 2px;
+}
+
+
+.section .social {
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    margin: 1em;
+}
+
+.sidebar .section .social .icon {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.sidebar .section .social a {
+    flex: 1;
+    color: white;
+    position:absolute;
+    left: 48px;
+    padding-right: 1em;
+}
